@@ -1,0 +1,11 @@
+print ("Dobro")
+a = float (input ("Insira um número para calcular o dobro: "))
+dobro = a*2
+print("O dobro é: ", dobro);
+
+
+
+print ("Triplo")
+b = float (input ("Insira um número para calcular o triplo: "))
+triplo = b*3
+print("O triplo é: ", triplo)
