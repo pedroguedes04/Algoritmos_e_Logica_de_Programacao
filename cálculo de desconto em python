@@ -1,0 +1,10 @@
+print("Cálculo de desconto")
+
+a = float(input("Insira o valor total da compra: "))
+b = float(input("Insira a % de desconto: "))
+
+desconto = a * b / 100
+resultado = a - desconto
+
+print("O valor do desconto é:", desconto)
+print("O resultado com desconto é:", resultado)
