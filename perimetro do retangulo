@@ -1,0 +1,8 @@
+print("Perímetro do retângulo")
+
+a = float (input ("Insira a base do retângulo: "))
+b = float (input ("Insira a altura do retângulo: "))
+
+perimetro = 2*(a+b)
+
+print("O perímetro do retângulo é: ", perimetro)
