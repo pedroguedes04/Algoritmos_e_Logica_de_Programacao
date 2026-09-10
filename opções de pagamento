@@ -1,0 +1,36 @@
+print("====== OPÇÕES DE PAGAMENTO ======")
+
+def escolhapagamento(opcao):
+    if opcao == 1:
+        return "Dinheiro"
+
+    elif opcao == 2:
+        return "Cartão de Crédito"
+
+    elif opcao == 3:
+        return "Cartão de Débito"
+
+    elif opcao == 4:
+        return "PIX"
+
+    elif opcao == 5:
+        return "Boleto"
+
+    else:
+        return "Opção inválida"
+
+
+def main():
+    print("1 - Dinheiro")
+    print("2 - Cartão de Crédito")
+    print("3 - Cartão de Débito")
+    print("4 - PIX")
+    print("5 - Boleto")
+
+    opcao = int(input("Escolha a opção de pagamento: "))
+    pagamento = escolhapagamento(opcao)
+
+    print("O pagamento escolhido foi:", pagamento)
+
+
+main()
