@@ -1,0 +1,30 @@
+programa
+{
+	funcao inicio()
+	{
+		// ler 5 numeros, contar quantos positivos tem e somar todos
+
+		inteiro i = 1
+		real numero
+		real soma = 0
+		inteiro positivos = 0
+
+		enquanto (i <= 5)
+		{
+			escreva("Digite o ", i, "º número: ")
+			leia(numero)
+
+			soma = soma + numero
+
+			se (numero > 0)
+			{
+				positivos++
+			}
+
+			i++
+		}
+
+		escreva("\nQuantidade de números positivos: ", positivos)
+		escreva("\nSoma dos números: ", soma)
+	}
+}
