@@ -1,0 +1,31 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro opcao
+		real c
+
+		faca
+		{
+			escreva("\n+++++ CONVERSOR: CELSIUS PARA FAHRENHEIT +++++\n")
+			escreva("1 - Converter\n")
+			escreva("0 - Sair\n")
+			escreva("Escolha uma opção: ")
+			leia(opcao)
+
+			se (opcao == 1)
+			{
+				escreva("Digite a temperatura atual em Celsius: ")
+				leia(c)
+				escreva("Temperatura convertida: ", c * 9 / 5 + 32, " °F\n")
+			}
+			senao se (opcao != 0)
+			{
+				escreva("Opção inválida!\n")
+			}
+
+		} enquanto (opcao != 0)
+
+		escreva("Sistema encerrado!")
+	}
+}
