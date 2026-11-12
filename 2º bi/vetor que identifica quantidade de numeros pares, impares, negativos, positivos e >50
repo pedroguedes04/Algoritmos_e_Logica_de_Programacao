@@ -1,0 +1,44 @@
+programa {
+
+  /* INSERIR 15 VALORES EM UM VETOR E IDENTIFICAR QUANTIDADE DE NUMEROS PARES,
+     IMPARES, NEGATIVOS, POSITIVOS E MAIORES QUE 50 */
+
+  funcao inicio() {
+    inteiro vetor[15]
+
+    para (inteiro i = 0; i < 15; i++) {
+      escreva("Digite o ", i + 1, "º valor: ")
+      leia(vetor[i])
+    }
+
+    escreva("\nQuantidade de numeros pares: ", contar_tipo(vetor, 15, 1))
+    escreva("\nQuantidade de numeros impares: ", contar_tipo(vetor, 15, 2))
+    escreva("\nQuantidade de numeros negativos: ", contar_tipo(vetor, 15, 3))
+    escreva("\nQuantidade de numeros positivos: ", contar_tipo(vetor, 15, 4))
+    escreva("\nQuantidade de numeros maiores que 50: ", contar_tipo(vetor, 15, 5), "\n")
+  }
+
+  funcao inteiro contar_tipo(inteiro vetor[], inteiro tamanho, inteiro tipo) {
+    inteiro quantidade = 0
+
+    para (inteiro i = 0; i < tamanho; i++) {
+      se (tipo == 1 e vetor[i] % 2 == 0) {
+        quantidade++
+      }
+      senao se (tipo == 2 e vetor[i] % 2 != 0) {
+        quantidade++
+      }
+      senao se (tipo == 3 e vetor[i] < 0) {
+        quantidade++
+      }
+      senao se (tipo == 4 e vetor[i] > 0) {
+        quantidade++
+      }
+      senao se (tipo == 5 e vetor[i] > 50) {
+        quantidade++
+      }
+    }
+
+    retorne quantidade
+  }
+}
